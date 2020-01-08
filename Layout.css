@@ -1,0 +1,195 @@
+* {
+	text-align: center;
+}
+/* text-align puts all the text in which position you want it, I chose center cause it appeals to me better.  */
+.header-content, .container-content, .header-content, .content {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+/* This tag was to make the text not stretch over the same page but instead to make the text more aligned towards the middle and leave space on the sides. */
+
+
+
+
+ol {
+ list-style-type: none;
+ }
+ /* I used this to get rid of bullet holes because it messed up my page and how it looks. */
+
+ 
+ 
+ p {
+  font-family: 'Sunshiney', cursive;
+}
+ /* font given to the words in paragraph tag. */
+.main-style {
+  font-family:  'Exo 2', sans-serif;
+  font-size: 22px;
+}
+ /* The main style of the whole page excluding <p> because I gave that another font. */
+ 
+ 
+body {
+  background-image: url("https://66.media.tumblr.com/f4926b73b4d1805c5055d28e2f056c4a/tumblr_o5ri6kXtA11tsv046o1_400.png");
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  font-size: 20px;
+}
+ /* Gave my background the image, I placed the image towards the center of the page. I made it so the image progresses with scrolling of the page. I made the image cover the whole page instead of multiple pictures as my background and I added a consistent font size to my background. */
+
+ 
+ 
+img {
+	width: 60%;
+}
+/* So that my images in the image gallery section aren't too big */ 
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+ /* So that the menu at the top has style,gave it colour */
+/* This code was taken from W3schools -> https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_sticky */
+
+
+
+
+.page-nav {
+  overflow: hidden;
+  background-color: #333;
+}
+/* gives my menu a black background*/
+
+.page-nav a:link, .page-nav a:visited {
+  display: block;
+  color: Pink;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+/* styles my menu giving it colour they display is blocked the amount of space and the appearance */
+
+
+
+
+#contact {
+  background-color: #333;
+  width: 94%;
+  border: 15px #333;
+  padding: 50px;
+  text-align: center;
+}
+/* Gives black box in the contact me section */
+
+
+
+
+
+
+.container-content-contact {
+  background-color:#ffb3ff;
+  width: 40%;
+  border: 15px #333;
+  padding: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* gives me a pink box inside the contact me secton */
+
+
+
+
+.page-nav a:hover {
+  background-color: #80ffff;
+}
+/* the background colour of the navigation when you hover over it */
+
+.page-nav a:active {
+  background-color: #ff66ff;
+}
+/* the background colour of the navigation when pressed  */
+
+
+
+
+
+#contact-name, #contact-email, #contact-phone, #contact-message {
+	border-width: 2px;
+	border-color: #333;
+	border-radius: 25px;
+	border-style: solid;
+}
+/* other box around the contact me part */
+
+
+
+
+
+
+
+
+
+/* this whole code below was taken from https://codepen.io/JTBennett/pen/BjpXRo */
+.contact-me:target {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+/* This gives my contact me part an animation when it is targeted on the users web page eg when they scroll down to it or press it from the menu above */
